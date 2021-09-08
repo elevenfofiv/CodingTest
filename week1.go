@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func solution(price, money, count int) int {
+func solution(price, money, count int) int64 {
 	sum := 0
 	for i := 0; i <= count; i++ {
 		sum += (price * i)
@@ -11,7 +11,7 @@ func solution(price, money, count int) int {
 		return 0
 	} else {
 		total := money - sum
-		return -(total)
+		return int64(-total)
 	}
 
 }
