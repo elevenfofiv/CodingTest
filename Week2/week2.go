@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-func solution(score [][]int) string {
+func solution(scores [][]int) string {
 	var max, min, repeat, sum, average int
 	var result string
 	var result_people string
-	i_reshape := make([][]int, len(score))
+	i_reshape := make([][]int, len(scores))
 
-	for i := 0; i < len(score); i++ {
-		i_reshape[i] = make([]int, len(score[i]))
-		for index, value := range score {
+	for i := 0; i < len(scores); i++ {
+		i_reshape[i] = make([]int, len(scores[i]))
+		for index, value := range scores {
 			i_reshape[i][index] = value[i]
 		}
 	}
